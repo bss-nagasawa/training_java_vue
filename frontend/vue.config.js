@@ -4,10 +4,15 @@ const webpack = require('webpack');
 module.exports = defineConfig({
   transpileDependencies: true,
   devServer: {
-    proxy: 'http://localhost:8081', // Spring Bootのポートに合わせる
+    proxy: {
+      '/api': {
+        target: 'http://localhost:8081', // Spring Bootのポートに合わせる
+        changeOrigin: true,
+      },
+    },
     port: 8080 // Vue.jsのポートを変更
   },
-  outputDir: '../app/src/main/resources/static',
+  outputDir: 'dist', // ビルドされたファイルの出力先を適切なディレクトリに変更
   configureWebpack: {
     plugins: [
       new webpack.DefinePlugin({

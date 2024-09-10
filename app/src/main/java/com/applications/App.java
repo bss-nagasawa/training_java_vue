@@ -14,8 +14,8 @@ public class App {
 
 @RestController
 class HelloController {
-    @GetMapping("/")
+    @GetMapping("/api/message")
     public String hello() {
-        return "Hello, World!";
+        return "Vueへ接続成功";
     }
 }
