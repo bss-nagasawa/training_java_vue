@@ -6,7 +6,7 @@ CREATE TABLE admin_login_info (
     register VARCHAR(20) NOT NULL COMMENT '登録者名',
     update_date TIMESTAMP NOT NULL COMMENT '更新日',
     updater VARCHAR(20) NULL COMMENT '更新者名'
-)
+)COMMENT = '管理機能ログイン情報'
 
 CREATE TABLE user_login_info (
     id INT NOT NULL PRIMARY KEY COMMENT 'ログインID',
@@ -16,8 +16,7 @@ CREATE TABLE user_login_info (
     register VARCHAR(20) NOT NULL COMMENT '登録者名',
     update_date TIMESTAMP NOT NULL COMMENT '更新日',
     updater VARCHAR(20) NOT NULL COMMENT '更新者名'
-)
-
+)COMMENT = '会員機能ログイン情報'
 
 CREATE TABLE users (
     login_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY COMMENT 'ログインID',
@@ -36,19 +35,19 @@ CREATE TABLE users (
     birth_date CHAR(8) NULL COMMENT '生年月日',
     age INT(3) NULL COMMENT '年齢',
     email VARCHAR(100) NOT NULL COMMENT 'E-mail',
-    registration_date TIMESTAMP NOT NULL COMMENT '登録日',
-    registrant_name VARCHAR(20) NOT NULL COMMENT '登録者名',
+    regist_date TIMESTAMP NOT NULL COMMENT '登録日',
+    register VARCHAR(20) NOT NULL COMMENT '登録者名',
     update_date TIMESTAMP NOT NULL COMMENT '更新日',
-    updater_name VARCHAR(20) NOT NULL COMMENT '更新者名'
-)
+    updater VARCHAR(20) NOT NULL COMMENT '更新者名'
+)COMMENT = '個人情報'
 
 CREATE TABLE prefectures (
     prefecture_number INT(2) NOT NULL PRIMARY KEY COMMENT '都道府県番号',
     prefecture_name_kanji VARCHAR(10) NOT NULL COMMENT '都道府県名_漢字'
-)
+)COMMENT = '都道府県マスタ'
 CREATE TABLE messages (
     message_id CHAR(7) NOT NULL PRIMARY KEY COMMENT 'メッセージID',
     message VARCHAR(100) NOT NULL COMMENT 'メッセージ'
-)
+)COMMENT = 'メッセージマスタ'
 
 
