@@ -45,6 +45,7 @@ CREATE TABLE prefectures (
     prefecture_number INT(2) NOT NULL PRIMARY KEY COMMENT '都道府県番号',
     prefecture_name_kanji VARCHAR(10) NOT NULL COMMENT '都道府県名_漢字'
 )COMMENT = '都道府県マスタ'
+
 CREATE TABLE messages (
     message_id CHAR(7) NOT NULL PRIMARY KEY COMMENT 'メッセージID',
     message VARCHAR(100) NOT NULL COMMENT 'メッセージ'

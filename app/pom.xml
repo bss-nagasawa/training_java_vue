@@ -11,6 +11,7 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <spring.boot.version>2.5.4</spring.boot.version> <!-- Spring Bootのバージョンを指定 -->
         <mysql.connector.version>8.0.26</mysql.connector.version> <!-- MySQL Connectorのバージョンを指定 -->
+        <start-class>java.com.application.App</start-class>
     </properties>
     <dependencies>
         <!-- Spring Boot Starter Data JPA -->
