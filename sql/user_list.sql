@@ -1,0 +1,22 @@
+INSERT INTO user_login_info (login_id, password, category, regist_date, update_date) 
+VALUES 
+('4d4rhypv4z', 'Qrgvy9Ts4PZvyNSr6NzL', 1, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('9kd44pk82a', 'XxzfnDiNMj7j4f6VC3RT', 1, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('n2pwjb6fi3', 'LchhL3rfzbrEgJf6QhWf', 2, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('gd6wf6u4oc', 'HJ7QguLJG6tfyJXc8YKp', 2, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('s6s3vqents', 'cqVKcf75rxV9QLqNzDGe', 3, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('xibrv55gim', 'FazazQ2casiW2FbCBPuS', 3, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('ovn8ebggs7', 'BgZ43HiTf8JfwJKtCvPi', 4, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('t2peebnxxr', 'RxYtSLC5AqDwnCgaprGR', 4, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('4e4uioqvis', 'r6AJdZ9LYTMfHHkBZ5zH', 5, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('bm2w9adju6', 'RuaMzZpiSS97SnmQtzkt', 5, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('u7mmfk3kus', 'xJFKNgBXkrhnW4itzqBx', 6, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('pvzucro545', 'vgPeyR6ku5KcKrYurVLJ', 6, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('4yq3do2ws3', '7rqfj6FNGCLGvJ5sj8Wb', 7, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('xugv6ec4xn', 'KydX6jYZF3nijKr37hbJ', 7, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('4765myytx3', 'HtzMdeDZkfTvqc7csKeq', 8, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('kopkbozyiv', 'iAw3FRuJ77izTpAAkKsQ', 8, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('rehbmue2vt', 'HJRMcgquWtBgmG7YsGPM', 9, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('ot5qm6hpcx', 'av5AgyhDsLhzJaBixrrd', 9, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('ch3cy8imm7', '7LPeZqsFwmcdgbyqzPNx', 1, '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
+('om3igrdcu7', 's26z9Yr9HcsTY6DQXgne', 9, '2024-10-08 17:30:00', '2024-10-08 17:30:00');
