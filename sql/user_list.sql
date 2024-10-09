@@ -1,4 +1,4 @@
-INSERT INTO users (login_id, personal_number, last_name_kanji, first_name_kanji, last_name_kana, first_name_kana, postal_code, address1, address2, address3, phone1, birth_date, age, email, regist_date, update_date)
+INSERT INTO users (login_id, personal_number, last_name_kanji, first_name_kanji, last_name_kana, first_name_kana, postal_code, address1, address2, address3, phone1, birth_date, email, regist_date, update_date)
 VALUES 
 ('Userkcv5vs', '12345', '山田', '太郎', 'ヤマダ', 'タロウ', '1234567', '東京都', '新宿区', '西新宿', '09012345678', '19900101', 'yamada@example.com', '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
 ('Userfsb5dg', '67890', '鈴木', '花子', 'スズキ', 'ハナコ', '7654321', '大阪府', '大阪市', '北区', '08087654321', '19920202', 'suzuki@example.com', '2024-10-08 17:30:00', '2024-10-08 17:30:00'),
