@@ -4,7 +4,7 @@
 - HTTPメソッド: GET
 
 ### 説明
-このエンドポイントは管理者情報を取得し、login_idとauthのみを含むレスポンスを返却します。
+このエンドポイントは管理者情報を取得し、login_idとpasswordのみを含むレスポンスを返却します。
 
 ### リクエスト
 - パラメータ: なし
@@ -17,16 +17,16 @@
     - 要素: オブジェクト
         - プロパティ:
             - login_id (文字列): 管理者のログインID
-            - auth (整数): 管理者の権限レベル
+            - password (文字列): 管理者のパスワード
 
 ### レスポンス例
 [
   {
     "login_id": "Admin12345",
-    "auth": 1
+    "password": "s4xwH6PNreTHiXaupJc6"
   },
   {
     "login_id": "Admin56789",
-    "auth": 2
+    "password": "B3dB3JKxLz2sKhVFtGhn"
   }
 ]
