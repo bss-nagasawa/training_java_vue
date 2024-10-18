@@ -18,27 +18,27 @@ public class AdminController {
     private AdminRepository adminRepository;
 
     @GetMapping
-    public List<AdminResponce> getAdmins() {
+    public List<AdminResponse> getAdmins() {
         return adminRepository.findAll().stream()
-                .map(admin -> new AdminResponce(admin.getLoginId(), admin.getAuth()))
+                .map(admin -> new AdminResponse(admin.getLoginId(), admin.getPassword()))
                 .collect(Collectors.toList());
     }
 
-    public static class AdminResponce {
+    public static class AdminResponse {
         private String loginId;
-        private int auth;
+        private String password;
 
-        public AdminResponce(String loginId, int auth) {
+        public AdminResponse(String loginId, String password) {
             this.loginId = loginId;
-            this.auth = auth;
+            this.password = password;
         }
 
         public String getLoginId() {
             return loginId;
         }
 
-        public int getAuth() {
-            return auth;
+        public String getPassword() {
+            return password;
         }
     }
 }
