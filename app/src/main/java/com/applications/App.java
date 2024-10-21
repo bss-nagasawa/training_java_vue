@@ -17,7 +17,7 @@ public class App {
         SpringApplication.run(App.class, args);
     }
 
-    // CORS設定のためのBeanを定義
+    // サーバー側とクライアント側のポートが異なる場合にCORS設定が必要のため設定を追加
     @Bean
     public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
