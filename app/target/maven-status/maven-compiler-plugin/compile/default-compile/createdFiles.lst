@@ -1,5 +1,5 @@
 com\applications\service\UserService.class
+com\applications\HelloController.class
 com\applications\repository\UserRepository.class
 com\applications\App.class
-com\applications\HelloController.class
 com\applications\model\User.class
