@@ -1,33 +1,34 @@
 # 会員情報取得API/IF仕様書
 ### エンドポイント
-- URL: /api/users
-- HTTPメソッド: GET
+- URL: /api/user_login
+- HTTPメソッド: POST
 
 ### 説明
-このエンドポイントは会員情報を取得し、login_idとpasswordのみを含むレスポンスを返却します。
+このエンドポイントはログイン認証を行います。クライアントで入力されたlogin_idとpasswordを一時的に保存しデータベースに照会し確認します。認証が成功すれば次ページに進みます。
 
 ### リクエスト
 - パラメータ: なし
+- リクエスト形式： application/json
+- リクエストボディ： 
+    - login_id (文字列): 会員のログインID
+    - password (文字列): 会員のパスワード
 
-### レスポンス
-- HTTPステータスコード: 200 OK
-- レスポンス形式: application/json
-- レスポンスボディ:
-    - 型: 配列
-    - 要素: オブジェクト
-        - プロパティ:
-            - login_id (文字列): 会員のログインID
-            - password (文字列): 会員のパスワード
-
-### レスポンス例
+### リクエスト例
 ```json
 [
   {
     "login_id": "Userkcv5vs",
     "password": "Qrgvy9Ts4PZvyNSr6NzL"
-  },
-  {
-    "login_id": "Userfsb5dg",
-    "password": "XxzfnDiNMj7j4f6VC3RT"
   }
 ]
+```
+
+### 処理
+1. **login_id**と**password**を受け取り、一時的に変数に保存。
+2. データベース内で**login_id**と**password**を照会。
+3. 照会結果が一致すればログイン成功、次のページに進む。
+4. 一致しない場合はエラーメッセージを返却
+
+### レスポンス
+- HTTPステータスコード: 200 OK
+- レスポンス形式: application/json
