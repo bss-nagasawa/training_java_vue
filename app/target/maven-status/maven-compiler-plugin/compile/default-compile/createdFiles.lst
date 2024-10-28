@@ -1,8 +1,10 @@
 com\applications\service\UserService.class
 com\applications\App$1.class
+com\applications\dto\UserLoginRequest.class
 com\applications\UserController.class
 com\applications\service\AdminService.class
 com\applications\AdminController$AdminResponse.class
+com\applications\dto\UserLoginResponse.class
 com\applications\repository\UserRepository.class
 com\applications\repository\AdminRepository.class
 com\applications\App.class
