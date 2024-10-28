@@ -27,18 +27,3 @@ public class App {
         };
     }
 }
-
-// @RestController
-// class HelloController {
-//     @Autowired
-//     private UserService userService;
-
-//     @GetMapping("/api/message")
-//     public String hello() {
-//         if (userService.isDatabaseConnected()) {
-//             return "データベース接続成功";
-//         } else {
-//             return "データベース接続失敗";
-//         }
-//     }
-// }

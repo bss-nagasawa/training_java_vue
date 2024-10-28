@@ -1,14 +1,14 @@
 <!-- ログイン確認のための仮のページ  -->
 <template>
   <div>
-    <h2>次のページ</h2>
+    <h2>マイページ</h2>
     <p>ログインに成功しました。</p>
   </div>
 </template>
 
 <script>
 export default {
-  name: "NextPage",
+  name: "MyPage",
 };
 </script>
 

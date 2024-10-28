@@ -1,12 +1,12 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import UserLogin from '../components/UserLogin.vue';
-import NextPage from '../components/NextPage.vue';
+import MyPage from '../components/MyPage.vue';
 
 /* ルーティングの設定
    パスとコンポーネントの関連付け */
 const routes = [
   { path: '/user/login', component: UserLogin }, 
-  { path: '/next-page', component: NextPage }
+  { path: '/myPage', component: MyPage }
 ];
 
 //ページ遷移の設定

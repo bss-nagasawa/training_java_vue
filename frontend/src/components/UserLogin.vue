@@ -1,10 +1,5 @@
 <template>
   <div class="login-container">
-    <!-- ヘッダーの左側に「ログイン」、右側にロゴを表示 -->
-    <header>
-      <div class="left-header">ログイン</div>
-      <img src="@/assets/company_logo.png" alt="Logo" class="logo" />
-    </header>
 
     <!-- ログインフォームのメイン部分 -->
     <div class="login-form">
@@ -28,11 +23,6 @@
       <!-- エラーメッセージの表示 -->
       <div v-if="error" class="error-message">{{ error }}</div>
     </div>
-
-    <!-- フッター右下に著作権情報 -->
-    <footer>
-      <span>©株式会社BSS</span>
-    </footer>
   </div>
 </template>
 
@@ -59,7 +49,7 @@ export default {
         });
         if (response.data.success) {
           // ログイン成功、次のページへ進む
-          this.$router.push('/next-page');
+          this.$router.push('/myPage');
         } else {
           this.error = 'ログインIDまたはパスワードが間違っています。';
         }
