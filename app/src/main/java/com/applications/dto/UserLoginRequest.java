@@ -1,7 +1,7 @@
 package com.applications.dto;
 
 //クライアントから送られたJSONデータを格納するクラス
-public class LoginRequest {
+public class UserLoginRequest {
     private String loginId;
     private String password;
 

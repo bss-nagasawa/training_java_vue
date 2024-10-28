@@ -1,5 +1,4 @@
 com\applications\service\UserService.class
-com\applications\dto\LoginResponse.class
 com\applications\App$1.class
 com\applications\UserController.class
 com\applications\service\AdminService.class
@@ -8,6 +7,5 @@ com\applications\repository\UserRepository.class
 com\applications\repository\AdminRepository.class
 com\applications\App.class
 com\applications\AdminController.class
-com\applications\dto\LoginRequest.class
 com\applications\model\User.class
 com\applications\model\Admin.class

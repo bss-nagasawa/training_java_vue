@@ -5,9 +5,8 @@ import NextPage from '../components/NextPage.vue';
 /* ルーティングの設定
    パスとコンポーネントの関連付け */
 const routes = [
-  { path: '/user/login', component: UserLogin }, // パスを `/api/user` に変更
-  { path: '/next-page', component: NextPage },
-  { path: '/', redirect: '/user/login' } // ルートパスをリダイレクト
+  { path: '/user/login', component: UserLogin }, 
+  { path: '/next-page', component: NextPage }
 ];
 
 //ページ遷移の設定
