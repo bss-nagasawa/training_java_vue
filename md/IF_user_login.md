@@ -1,6 +1,6 @@
 # 会員情報取得API/IF仕様書
 ### エンドポイント
-- URL: /api/user_login
+- URL: /api/user/login
 - HTTPメソッド: POST
 
 ### 説明

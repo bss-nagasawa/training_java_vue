@@ -1,6 +1,6 @@
 # 管理者情報取得API/IF仕様書
 ### エンドポイント
-- URL: /api/admins
+- URL: /api/admins/login
 - HTTPメソッド: GET
 
 ### 説明
