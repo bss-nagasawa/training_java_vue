@@ -15,7 +15,7 @@ import java.util.stream.Collectors;
 @RestController
 /* リクエストするURLを指定
    管理機能ログインのためのコントローラー */
-@RequestMapping("/api/admins")
+@RequestMapping("/api/admins/login")
 public class AdminController {
 
     //DBとのやり取りを行うためのadminServiceを自動的に注入
@@ -23,7 +23,7 @@ public class AdminController {
     private AdminService adminService;
 
     @GetMapping
-    public List<AdminResponse> getAdmins() {
+    public List<AdminResponse> adminLogin() {
         //DBとの接続エラーや取得時エラーの例外処理が必要
 
         /* サービスクラスからデータを取得し、

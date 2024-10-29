@@ -17,7 +17,7 @@ public class UserController {
 
     @PostMapping("/login")
     //クライアントから送られたJSONデータをLoginRequestクラスに変換し、ログイン認証を行う
-    public ResponseEntity<?> login(@RequestBody UserLoginRequest loginRequest) {
+    public ResponseEntity<?> userLogin(@RequestBody UserLoginRequest loginRequest) {
         //UserServiceクラスのauthenticateメソッドにオブジェクトを渡し、認証結果を取得
         boolean isAuthenticated = userService.authenticate(loginRequest.getLoginId(), loginRequest.getPassword());
         //認証結果をクライアントに返す
