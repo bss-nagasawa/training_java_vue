@@ -43,7 +43,7 @@ export default {
     // フォーム送信時に呼び出されるメソッド
     async login() {
       try {
-        const response = await axios.post('http://localhost:8080/api/user/login', {
+        const response = await axios.post('/api/user/login', {
           loginId: this.loginId,
           password: this.password
         });
